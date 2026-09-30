@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podflow — Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard-styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand">
+          <div class="logo-mark"></div>
+          <span>Podflow</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-page="dashboard">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item" data-page="episodes">
+          <span class="nav-icon">🎙️</span>
+          <span>Episodes</span>
+        </a>
+        <a href="#" class="nav-item" data-page="record">
+          <span class="nav-icon">⚙️</span>
+          <span>Record</span>
+        </a>
+        <a href="#" class="nav-item" data-page="analytics">
+          <span class="nav-icon">📈</span>
+          <span>Analytics</span>
+        </a>
+        <a href="#" class="nav-item" data-page="monetize">
+          <span class="nav-icon">💰</span>
+          <span>Monetize</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-item settings">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings</span>
+        </a>
+        <a href="premium.html" class="nav-item upgrade">
+          <span class="nav-icon">⭐</span>
+          <span>Upgrade</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Header -->
+      <header class="top-header">
+        <div class="header-left">
+          <h1 class="page-title">Dashboard</h1>
+        </div>
+        <div class="header-right">
+          <button class="btn-primary">New Episode</button>
+          <div class="user-menu">
+            <div class="user-avatar">AJ</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Page -->
+      <div class="page-container active" id="dashboard-page">
+        <div class="page-content">
+          <!-- Quick Stats -->
+          <section class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">▶️</div>
+              <div class="stat-info">
+                <div class="stat-label">Total Plays</div>
+                <div class="stat-value">428.5K</div>
+                <div class="stat-change">+24% this month</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">👥</div>
+              <div class="stat-info">
+                <div class="stat-label">Subscribers</div>
+                <div class="stat-value">12.3K</div>
+                <div class="stat-change">+8% this month</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">⏱️</div>
+              <div class="stat-info">
+                <div class="stat-label">Avg. Listen Time</div>
+                <div class="stat-value">34m 22s</div>
+                <div class="stat-change">+2% retention</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🌐</div>
+              <div class="stat-info">
+                <div class="stat-label">Platforms Live</div>
+                <div class="stat-value">8</div>
+                <div class="stat-change">All synced</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Recent Episodes -->
+          <section class="section-card">
+            <div class="section-header">
+              <h2>Recent Episodes</h2>
+              <a href="#" class="see-all">See all →</a>
+            </div>
+            <div class="episodes-table">
+              <div class="table-header">
+                <div class="col-name">Episode</div>
+                <div class="col-date">Published</div>
+                <div class="col-plays">Plays</div>
+                <div class="col-status">Status</div>
+                <div class="col-action"></div>
+              </div>
+              <div class="table-row">
+                <div class="col-name">
+                  <div class="episode-title">How to Build Viral Podcasts</div>
+                  <div class="episode-subtitle">Season 2, Ep 12</div>
+                </div>
+                <div class="col-date">Sep 28, 2024</div>
+                <div class="col-plays">8,234</div>
+                <div class="col-status">
+                  <span class="badge live">Live</span>
+                </div>
+                <div class="col-action">
+                  <button class="btn-icon">⋯</button>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="col-name">
+                  <div class="episode-title">Monetizing Your Audience</div>
+                  <div class="episode-subtitle">Season 2, Ep 11</div>
+                </div>
+                <div class="col-date">Sep 21, 2024</div>
+                <div class="col-plays">5,892</div>
+                <div class="col-status">
+                  <span class="badge live">Live</span>
+                </div>
+                <div class="col-action">
+                  <button class="btn-icon">⋯</button>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="col-name">
+                  <div class="episode-title">The Future of Audio Content</div>
+                  <div class="episode-subtitle">Season 2, Ep 10</div>
+                </div>
+                <div class="col-date">Sep 14, 2024</div>
+                <div class="col-plays">12,456</div>
+                <div class="col-status">
+                  <span class="badge live">Live</span>
+                </div>
+                <div class="col-action">
+                  <button class="btn-icon">⋯</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Chart Section -->
+          <section class="section-card">
+            <div class="section-header">
+              <h2>Performance Overview</h2>
+              <div class="chart-filter">
+                <button class="filter-btn active">7D</button>
+                <button class="filter-btn">30D</button>
+                <button class="filter-btn">90D</button>
+              </div>
+            </div>
+            <div class="chart-container">
+              <svg viewBox="0 0 600 200" class="line-chart">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3" />
+                    <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0" />
+                  </linearGradient>
+                </defs>
+                <polyline points="30,140 70,100 110,120 150,60 190,80 230,30 270,50 310,10 350,40 390,20 430,35 470,15 510,45 550,25" 
+                          fill="url(#chartGrad)" stroke="none"/>
+                <polyline points="30,140 70,100 110,120 150,60 190,80 230,30 270,50 310,10 350,40 390,20 430,35 470,15 510,45 550,25" 
+                          fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Episodes Page -->
+      <div class="page-container" id="episodes-page">
+        <div class="page-content">
+          <div class="page-header">
+            <div>
+              <h1>Episodes</h1>
+              <p>Manage all your published episodes</p>
+            </div>
+            <button class="btn-primary">+ New Episode</button>
+          </div>
+
+          <section class="section-card">
+            <div class="filter-bar">
+              <input type="text" placeholder="Search episodes..." class="search-input" />
+              <select class="filter-select">
+                <option>All Status</option>
+                <option>Published</option>
+                <option>Draft</option>
+                <option>Scheduled</option>
+              </select>
+            </div>
+
+            <div class="episodes-list">
+              <div class="episode-item">
+                <div class="episode-thumb">🎙️</div>
+                <div class="episode-details">
+                  <h3>How to Build Viral Podcasts</h3>
+                  <p>Season 2, Episode 12 • Published Sep 28, 2024</p>
+                  <div class="episode-stats">
+                    <span>▶️ 8.2K plays</span>
+                    <span>👥 1.2K unique listeners</span>
+                    <span>⏱️ 34m avg listen</span>
+                  </div>
+                </div>
+                <div class="episode-actions">
+                  <button class="btn-secondary btn-sm">Edit</button>
+                  <button class="btn-icon">⋯</button>
+                </div>
+              </div>
+
+              <div class="episode-item">
+                <div class="episode-thumb">🎙️</div>
+                <div class="episode-details">
+                  <h3>Monetizing Your Audience</h3>
+                  <p>Season 2, Episode 11 • Published Sep 21, 2024</p>
+                  <div class="episode-stats">
+                    <span>▶️ 5.8K plays</span>
+                    <span>👥 892 unique listeners</span>
+                    <span>⏱️ 28m avg listen</span>
+                  </div>
+                </div>
+                <div class="episode-actions">
+                  <button class="btn-secondary btn-sm">Edit</button>
+                  <button class="btn-icon">⋯</button>
+                </div>
+              </div>
+
+              <div class="episode-item">
+                <div class="episode-thumb">🎙️</div>
+                <div class="episode-details">
+                  <h3>The Future of Audio Content</h3>
+                  <p>Season 2, Episode 10 • Published Sep 14, 2024</p>
+                  <div class="episode-stats">
+                    <span>▶️ 12.4K plays</span>
+                    <span>👥 2.1K unique listeners</span>
+                    <span>⏱️ 42m avg listen</span>
+                  </div>
+                </div>
+                <div class="episode-actions">
+                  <button class="btn-secondary btn-sm">Edit</button>
+                  <button class="btn-icon">⋯</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Record Page -->
+      <div class="page-container" id="record-page">
+        <div class="page-content">
+          <div class="page-header">
+            <div>
+              <h1>Record New Episode</h1>
+              <p>Create and publish your next episode</p>
+            </div>
+          </div>
+
+          <div class="record-wizard">
+            <!-- Step 1: Basic Info -->
+            <div class="wizard-step active" id="step-1">
+              <div class="step-header">
+                <div class="step-number">1</div>
+                <h2>Episode Details</h2>
+              </div>
+              <form class="form-group">
+                <div class="form-field">
+                  <label>Episode Title</label>
+                  <input type="text" placeholder="e.g., The Future of Podcasting" />
+                </div>
+                <div class="form-field">
+                  <label>Description</label>
+                  <textarea placeholder="Write a captivating description..." rows="4"></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label>Season</label>
+                    <input type="number" placeholder="2" />
+                  </div>
+                  <div class="form-field">
+                    <label>Episode Number</label>
+                    <input type="number" placeholder="13" />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label>Tags</label>
+                  <input type="text" placeholder="podcast, tech, growth, business" />
+                </div>
+              </form>
+              <div class="wizard-actions">
+                <button class="btn-secondary" onclick="goToStep(2)">Continue</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Upload Audio -->
+            <div class="wizard-step" id="step-2">
+              <div class="step-header">
+                <div class="step-number">2</div>
+                <h2>Upload Audio</h2>
+              </div>
+              <div class="upload-area">
+                <div class="upload-icon">🎙️</div>
+                <h3>Drop your audio file here or click to browse</h3>
+                <p>Supported formats: MP3, WAV, M4A (max 500MB)</p>
+                <input type="file" class="file-input" accept="audio/*" />
+              </div>
+              <div class="wizard-actions">
+                <button class="btn-secondary" onclick="goToStep(1)">Back</button>
+                <button class="btn-primary" onclick="goToStep(3)">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Cover Art -->
+            <div class="wizard-step" id="step-3">
+              <div class="step-header">
+                <div class="step-number">3</div>
+                <h2>Cover Art</h2>
+              </div>
+              <div class="cover-upload">
+                <div class="cover-preview">
+                  <div class="placeholder-cover">📸</div>
+                </div>
+                <button class="btn-secondary">Upload Cover Art</button>
+                <p>Recommended: 1400x1400px, JPG or PNG</p>
+              </div>
+              <div class="wizard-actions">
+                <button class="btn-secondary" onclick="goToStep(2)">Back</button>
+                <button class="btn-primary" onclick="goToStep(4)">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Publish Settings -->
+            <div class="wizard-step" id="step-4">
+              <div class="step-header">
+                <div class="step-number">4</div>
+                <h2>Publish Settings</h2>
+              </div>
+              <form class="form-group">
+                <div class="form-field">
+                  <label>Publication Time</label>
+                  <input type="datetime-local" />
+                </div>
+                <div class="form-field">
+                  <label>Select Platforms</label>
+                  <div class="platform-checkboxes">
+                    <label class="checkbox-item">
+                      <input type="checkbox" checked />
+                      <span>Spotify</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" checked />
+                      <span>Apple Podcasts</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" checked />
+                      <span>YouTube Music</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" checked />
+                      <span>Amazon Music</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label class="checkbox-item">
+                    <input type="checkbox" checked />
+                    <span>Enable comments</span>
+                  </label>
+                </div>
+              </form>
+              <div class="wizard-actions">
+                <button class="btn-secondary" onclick="goToStep(3)">Back</button>
+                <button class="btn-primary" onclick="publishEpisode()">Publish Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analytics Page -->
+      <div class="page-container" id="analytics-page">
+        <div class="page-content">
+          <div class="page-header">
+            <div>
+              <h1>Analytics</h1>
+              <p>Track your podcast performance across all platforms</p>
+            </div>
+          </div>
+
+          <div class="analytics-grid">
+            <section class="section-card full-width">
+              <div class="section-header">
+                <h2>Listener Growth</h2>
+                <div class="chart-filter">
+                  <button class="filter-btn active">30D</button>
+                  <button class="filter-btn">90D</button>
+                  <button class="filter-btn">1Y</button>
+                </div>
+              </div>
+              <div class="chart-container">
+                <svg viewBox="0 0 700 300" class="area-chart">
+                  <defs>
+                    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.4" />
+                      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+                    </linearGradient>
+                  </defs>
+                  <polygon points="20,220 60,180 100,190 140,140 180,160 220,100 260,120 300,50 340,70 380,30 420,50 460,20 500,40 540,10 580,35 620,5 660,30 700,15 700,280 20,280" 
+                           fill="url(#areaGrad)" />
+                  <polyline points="20,220 60,180 100,190 140,140 180,160 220,100 260,120 300,50 340,70 380,30 420,50 460,20 500,40 540,10 580,35 620,5 660,30 700,15" 
+                            fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+                </svg>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Top Episodes</h2>
+              <div class="mini-stats">
+                <div class="mini-stat">
+                  <div class="mini-stat-title">How to Build Viral Podcasts</div>
+                  <div class="mini-stat-value">8.2K ▶️</div>
+                </div>
+                <div class="mini-stat">
+                  <div class="mini-stat-title">The Future of Audio Content</div>
+                  <div class="mini-stat-value">12.4K ▶️</div>
+                </div>
+                <div class="mini-stat">
+                  <div class="mini-stat-title">Monetizing Your Audience</div>
+                  <div class="mini-stat-value">5.8K ▶️</div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Platform Breakdown</h2>
+              <div class="mini-stats">
+                <div class="mini-stat">
+                  <div class="mini-stat-title">Spotify</div>
+                  <div class="mini-stat-value">45%</div>
+                </div>
+                <div class="mini-stat">
+                  <div class="mini-stat-title">Apple Podcasts</div>
+                  <div class="mini-stat-value">30%</div>
+                </div>
+                <div class="mini-stat">
+                  <div class="mini-stat-title">YouTube Music</div>
+                  <div class="mini-stat-value">15%</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monetize Page -->
+      <div class="page-container" id="monetize-page">
+        <div class="page-content">
+          <div class="page-header">
+            <div>
+              <h1>Monetization</h1>
+              <p>Earn money from your podcast</p>
+            </div>
+          </div>
+
+          <div class="monetize-grid">
+            <section class="section-card">
+              <div class="feature-header">
+                <div class="feature-icon">💼</div>
+                <h2>Sponsorships</h2>
+              </div>
+              <p>Connect with brands and manage sponsored content</p>
+              <button class="btn-secondary btn-block">Manage Sponsorships</button>
+            </section>
+
+            <section class="section-card">
+              <div class="feature-header">
+                <div class="feature-icon">❤️</div>
+                <h2>Listener Support</h2>
+              </div>
+              <p>Accept donations and tips from your loyal listeners</p>
+              <button class="btn-secondary btn-block">Enable Support</button>
+            </section>
+
+            <section class="section-card">
+              <div class="feature-header">
+                <div class="feature-icon">🔒</div>
+                <h2>Premium Episodes</h2>
+              </div>
+              <p>Gate exclusive episodes for premium members</p>
+              <button class="btn-secondary btn-block">Set Up Paywalls</button>
+            </section>
+
+            <section class="section-card">
+              <div class="feature-header">
+                <div class="feature-icon">📊</div>
+                <h2>Revenue Dashboard</h2>
+              </div>
+              <p>Track earnings and payouts from all sources</p>
+              <button class="btn-secondary btn-block">View Revenue</button>
+            </section>
+          </div>
+
+          <section class="section-card full-width" style="margin-top: 40px;">
+            <h2>Revenue Summary</h2>
+            <div class="revenue-grid">
+              <div class="revenue-item">
+                <div class="revenue-label">Total Earnings</div>
+                <div class="revenue-value">$4,250.00</div>
+                <div class="revenue-period">This month</div>
+              </div>
+              <div class="revenue-item">
+                <div class="revenue-label">Sponsorships</div>
+                <div class="revenue-value">$3,500.00</div>
+                <div class="revenue-period">2 active deals</div>
+              </div>
+              <div class="revenue-item">
+                <div class="revenue-label">Listener Support</div>
+                <div class="revenue-value">$650.00</div>
+                <div class="revenue-period">127 supporters</div>
+              </div>
+              <div class="revenue-item">
+                <div class="revenue-label">Premium Episodes</div>
+                <div class="revenue-value">$100.00</div>
+                <div class="revenue-period">8 subscribers</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="dashboard-script.js"></script>
+  </body>
+</html>
